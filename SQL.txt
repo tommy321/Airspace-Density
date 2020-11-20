@@ -1,0 +1,242 @@
+spool 'C:\NAV_CAN_DB_Output\Canada_May_4_2017.csv'
+SELECT /*csv*/
+    *
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-05-04', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-06-06', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_May_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-05-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-06-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_Jun_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-06-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-07-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_Jul_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-07-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-08-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_Aug_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-08-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-09-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_Sep_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-09-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-10-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_Oct_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-10-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-11-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_Nov_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-11-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2017-12-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+
+spool 'C:\NAV_CAN_DB_Output\YVR_Dec_2017.csv'
+SELECT /*csv*/
+    NATIONAL_FLIGHT_ID,
+    FLIGHT_EVENT_ID,
+    FLIGHT_EVENT_DATE,
+    ACID,
+    AC_TYPE_DSGNTR_CODE,
+    FLIGHT_FIX_LATITUDE_DEG,
+    FLIGHT_FIX_LONGITUDE_DEG, 
+    FLIGHT_FIX_SPEED_KN, 
+    FLIGHT_FIX_ALTITUDE_ESTAB_FT,
+    FLIGHT_FIX_HEADING_DEG
+FROM
+    rdpsr_flight_data.flight_event_position
+where
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG > 49
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LATITUDE_DEG < 49.5
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG > -124
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_FIX_LONGITUDE_DEG < -122
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE >= TO_DATE('2017-12-01', 'YYYY-MM-DD')
+and
+    rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE < TO_DATE('2018-01-01', 'YYYY-MM-DD')
+ORDER BY rdpsr_flight_data.flight_event_position.FLIGHT_EVENT_DATE ASC;
+spool OFF;
